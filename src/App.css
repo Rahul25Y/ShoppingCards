@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
+  border: 2px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 20px;
+  animation-name: cards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+/* .cards:hover{
+  background-color: rgb(200, 216, 216);
+} */
+/* @keyframes  cards{
+   1%{background-color: aqua;}
+   10%{background-color: blue;}
+   30%{background-color: blueviolet;}
+   60%{background-color: chartreuse;}
+   85%{background-color: chocolate;}
+   97%{background-color: deeppink;}
+} */
+.Products{
+  border: 1px solid black;
+  font-size: 23px;
   color: white;
+  background-color: deepskyblue;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.Shopping-Cards-text{
+  position: relative;
+  animation: a 4s linear infinite;
 }
-
-@keyframes App-logo-spin {
-  from {
+@keyframes a {
+  1%{
+   padding-left:4rem ;
+   color: orangered;
+  }
+  40%{
+    padding-right:4rem ;
+    color:chartreuse;
+  }
+  80%{
+    padding-right:4rem ;
+   
+    color: deeppink;
+  }
+  100%{
+    padding-right:4rem ;
+    color: cornflowerblue;
+  }
+}
+.child-icon{
+  animation: child 3s linear infinite;
+}
+@keyframes child {
+  0%{
     transform: rotate(0deg);
+    padding-left: 50px;
   }
-  to {
+  100%{
     transform: rotate(360deg);
+  
   }
 }
+

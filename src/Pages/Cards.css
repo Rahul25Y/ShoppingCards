@@ -1,0 +1,18 @@
+.c{
+    color: orange;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    lighting-color: aqua;
+    padding-bottom: 5px;
+}
+.Carts-container{
+    border: 2px solid #f4f3f3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 8px 5px;
+    gap: 8px;
+    box-shadow: 3px 3px 4px 7px lightgray;
+    width: 98%;
+    margin: auto;
+}
